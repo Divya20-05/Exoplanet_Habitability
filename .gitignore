@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Data & Models (Exclude everything except production models and presets)
+outputs/processed_data/
+outputs/reports/
+outputs/plots/
+# Keep production models and presets
+!outputs/models/production/
+!outputs/planet_presets.json
+
+# Local config
+config.py
+app.log
+project.log
+
+# DS_Store
+.DS_Store
+
+# Virtual Environment
+venv/
+.venv/
+.env
