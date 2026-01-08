@@ -1,40 +1,20 @@
-# 🪐 Exoplanet Habitability Classification
+## 🚀 Deployment to Render
 
-AI-powered system for predicting exoplanet habitability using advanced machine learning techniques.
+This project is optimized for deployment as a Web Service on **[Render](https://render.com/)**.
 
-## 🌟 Features
-
-- **High-Performance ML Model**: 99.65% F1 Score using Linear SVM with SMOTE
-- **REST API**: Flask backend with comprehensive endpoints
-- **Modern UI**: Beautiful, responsive web interface with real-time predictions
-- **Comprehensive Pipeline**: End-to-end ML workflow from data preprocessing to deployment
-- **Production-Ready**: Model versioning, testing, and validation
-
-## 📊 Model Performance
-
-| Metric | Score |
-|--------|-------|
-| Accuracy | 99.63% |
-| Precision | 99.68% |
-| Recall | 99.63% |
-| **F1 Score** | **99.65%** |
-| ROC-AUC | 99.92% |
-
-## 🚀 Deployment Options
-
-### 1. Streamlit Cloud
-- **Main File**: `streamlit_app.py`
-- **Python Version**: Select **Python 3.11**.
-- Deployment: [share.streamlit.io](https://share.streamlit.io/)
-
-### 2. Render Web Service
-- **Python Version**: Select **Python 3.11** (or it will auto-detect from `runtime.txt`).
-- **Build Command**: `pip install -r requirements.txt`
-- **Port**: Render automatically provides the `PORT` environment variable.
-- Deployment: [render.com](https://render.com/)
-
-### Live Application
-Once deployed, you will have a beautiful, responsive web interface for real-time exoplanet habitability predictions.
+### How to Deploy:
+1. **GitHub Link**: `https://github.com/Divya20-05/Exoplanet_Habitability.git`
+2. **Setup on Render**:
+   - Create a new **Web Service**.
+   - Connect the repository.
+   - **Python Version**: Select **Python 3.11** (auto-detected via `runtime.txt`).
+   - **Build Command**: `pip install -r requirements.txt`
+   - **Start Command**: `gunicorn app:app`
+   
+### Feature List
+- **High-Performance ML Model**: 99.65% F1 Score.
+- **REST API**: Flask backend with comprehensive endpoints.
+- **Production-Ready**: Configured with Procfile, Gunicorn, and relative paths.
 
 ## 📡 API Endpoints
 
