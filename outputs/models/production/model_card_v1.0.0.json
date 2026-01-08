@@ -2,7 +2,7 @@
   "model_info": {
     "name": "Exoplanet Habitability Classifier",
     "version": "1.0.0",
-    "created_date": "20260108_104519",
+    "created_date": "20260108_194221",
     "model_type": "Linear SVM with SMOTE",
     "framework": "scikit-learn + imbalanced-learn"
   },
