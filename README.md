@@ -20,32 +20,20 @@ AI-powered system for predicting exoplanet habitability using advanced machine l
 | **F1 Score** | **99.65%** |
 | ROC-AUC | 99.92% |
 
-## 🚀 Quick Start
+## 🚀 Streamlit Cloud Deployment
 
-### Installation
+This project is optimized for deployment on **[Streamlit Cloud](https://share.streamlit.io/)**.
 
-```bash
-# Clone the repository
-git clone <repository-url>
-cd Infosys_Exoplanet
+### How to Deploy:
+1. Go to [share.streamlit.io](https://share.streamlit.io/).
+2. Connect your GitHub account.
+3. Select this repository: `Exoplanet_Habitability`.
+4. Set the main file path to: `streamlit_app.py`.
+5. Select **Python 3.11** or **3.12**.
+6. Click **Deploy**!
 
-# Install dependencies
-pip install -r requirements.txt
-pip install -r requirements_web.txt
-
-# Run the ML pipeline (if not already done)
-python3 08_full_pipeline.py
-python3 09_model_evaluation.py
-python3 11_model_interpretability.py
-python3 12_final_model_deployment.py
-
-# Start the Flask application
-python3 app.py
-```
-
-### Access the Application
-
-Open your browser and navigate to: **http://localhost:5050**
+### Live Application
+Once deployed, you will have a beautiful, responsive web interface for real-time exoplanet habitability predictions.
 
 ## 📡 API Endpoints
 
