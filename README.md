@@ -20,17 +20,18 @@ AI-powered system for predicting exoplanet habitability using advanced machine l
 | **F1 Score** | **99.65%** |
 | ROC-AUC | 99.92% |
 
-## 🚀 Streamlit Cloud Deployment
+## 🚀 Deployment Options
 
-This project is optimized for deployment on **[Streamlit Cloud](https://share.streamlit.io/)**.
+### 1. Streamlit Cloud
+- **Main File**: `streamlit_app.py`
+- **Python Version**: Select **Python 3.11**.
+- Deployment: [share.streamlit.io](https://share.streamlit.io/)
 
-### How to Deploy:
-1. Go to [share.streamlit.io](https://share.streamlit.io/).
-2. Connect your GitHub account.
-3. Select this repository: `Exoplanet_Habitability`.
-4. Set the main file path to: `streamlit_app.py`.
-5. Select **Python 3.11** or **3.12**.
-6. Click **Deploy**!
+### 2. Render Web Service
+- **Build Command**: `pip install -r requirements.txt`
+- **Start Command**: `gunicorn app:app`
+- **Port**: Render automatically provides the `PORT` environment variable.
+- Deployment: [render.com](https://render.com/)
 
 ### Live Application
 Once deployed, you will have a beautiful, responsive web interface for real-time exoplanet habitability predictions.
