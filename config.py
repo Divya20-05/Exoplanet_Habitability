@@ -9,7 +9,7 @@ from pathlib import Path
 # ============================================================================
 # PROJECT PATHS
 # ============================================================================
-PROJECT_ROOT = Path("/Users/adityajatling/Documents/Infosys_Exoplanet")
+PROJECT_ROOT = Path(__file__).parent
 DATA_PATH = PROJECT_ROOT / "phl_exoplanet_catalog_2019.csv"
 
 # Output directories

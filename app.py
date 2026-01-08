@@ -375,7 +375,10 @@ if __name__ == '__main__':
     print(f"  GET  /api/example         - Example input")
     print(f"  POST /api/predict         - Single prediction")
     print(f"  POST /api/predict_batch   - Batch predictions")
-    print(f"\n🌐 Server running on: http://localhost:5050")
+    
+    # Use PORT environment variable for Render
+    port = int(os.environ.get("PORT", 5050))
+    print(f"\n🌐 Server running on: http://localhost:{port}")
     print("=" * 80)
     
-    app.run(debug=True, host='0.0.0.0', port=5050)
+    app.run(debug=False, host='0.0.0.0', port=port)

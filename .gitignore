@@ -29,7 +29,6 @@ outputs/plots/
 !outputs/planet_presets.json
 
 # Local config
-config.py
 app.log
 project.log
 
