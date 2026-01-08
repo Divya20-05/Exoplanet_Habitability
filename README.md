@@ -28,8 +28,8 @@ AI-powered system for predicting exoplanet habitability using advanced machine l
 - Deployment: [share.streamlit.io](https://share.streamlit.io/)
 
 ### 2. Render Web Service
+- **Python Version**: Select **Python 3.11** (or it will auto-detect from `runtime.txt`).
 - **Build Command**: `pip install -r requirements.txt`
-- **Start Command**: `gunicorn app:app`
 - **Port**: Render automatically provides the `PORT` environment variable.
 - Deployment: [render.com](https://render.com/)
 
