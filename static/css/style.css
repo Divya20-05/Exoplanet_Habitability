@@ -834,3 +834,33 @@ footer {
         background-position: 50px 50px;
     }
 }
+/* ============================================================================
+   MODAL FIX - Ensure close button is clickable
+   ============================================================================ */
+
+/* Fix z-index stacking for modal elements */
+.modal-content.glass-card .modal-header {
+    position: relative;
+    z-index: 10;
+}
+
+.modal-content.glass-card .modal-body {
+    position: relative;
+    z-index: 5;
+}
+
+/* Ensure close button is above all decorative elements */
+.modal-content.glass-card .btn-close {
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+}
+
+/* Prevent pseudo-element from blocking clicks in modals */
+.modal-content.glass-card::before {
+    pointer-events: none;
+}
+
+/* Override overflow for modal to prevent clipping */.modal-content.glass-card {
+    overflow: visible;
+}
