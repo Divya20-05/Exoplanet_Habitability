@@ -153,7 +153,7 @@ This project is part of the Infosys Springboard program.
 
 ## 👥 Contributors
 
-Aditya Jatling
+Divya Vishwanath
 
 ## 🙏 Acknowledgments
 
