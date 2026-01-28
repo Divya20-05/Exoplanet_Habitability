@@ -131,12 +131,15 @@ body::after {
 }
 
 /* Ensure content is above background */
+/* IMPORTANT: Don't add z-index here as it will block Bootstrap modal backdrop! */
+/* The body::before and body::after already have z-index:0 and pointer-events:none */
 .container,
 header,
 main,
 footer {
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
+    /* REMOVED: This was blocking modal backdrop clicks! */
 }
 
 /* ============================================================================
@@ -834,9 +837,16 @@ footer {
         background-position: 50px 50px;
     }
 }
+
 /* ============================================================================
-   MODAL FIX - Ensure close button is clickable
+   MODAL FIX - Ensure close button and backdrop are clickable
    ============================================================================ */
+
+/* Prevent glass-card pseudo-element from blocking clicks in modals */
+.modal-content.glass-card::before {
+    pointer-events: none;
+    /* Decorative only, don't block clicks */
+}
 
 /* Fix z-index stacking for modal elements */
 .modal-content.glass-card .modal-header {
@@ -854,13 +864,9 @@ footer {
     position: relative;
     z-index: 20;
     cursor: pointer;
+    pointer-events: auto;
+    /* Ensure button receives clicks */
 }
 
-/* Prevent pseudo-element from blocking clicks in modals */
-.modal-content.glass-card::before {
-    pointer-events: none;
-}
-
-/* Override overflow for modal to prevent clipping */.modal-content.glass-card {
-    overflow: visible;
-}
+/* IMPORTANT: Don't set overflow:visible on modal-content as it breaks Bootstrap modal */
+/* The default overflow:hidden is needed for proper modal functioning */
