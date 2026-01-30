@@ -147,6 +147,10 @@ Infosys_Exoplanet/
 - **Typography**: Inter font family
 - **Responsive**: Mobile-first design approach
 
+## 🎨 Deployment URL
+
+https://habitability-of-exoplanets-k49h.onrender.com/
+
 ## 📝 License
 
 This project is part of the Infosys Springboard program.
